@@ -4,36 +4,25 @@
 A method should do only one thing at a time. And it should be related with their name.
 This is some bad example. 
 
-'''public void updateFooStatusAndRepository(Foo foo) {
-     if ( foo.hasFjord() ) {
-        this.repository(foo.getIdentifier(), this.collaborator.calculate(foo));
-     }
-
-     if (importantBusinessLogic()) {
-       foo.setStatus(FNAGLED);
-       this.collaborator.collectFnagledState(foo);
-     }
-  }'''
+'''public boolean checkAndLook() {
+		if(this.product.isEmpty()) {
+			return false;
+		}
+		else {
+			System.out.print(this.product.peek());
+			return true;
+		}
+	}'''
 
 Here is a better one.
 
-'''public void registerFoo(Foo foo) {
-     handleFjords(foo);
-     updateFnagledState(foo);
-  }
-
-  private void handleFjords(Foo foo) {
-      if ( foo.hasFjord() ) {
-        this.repository(foo.getIdentifier(), this.collaborator.calculate(foo));
-     }
-  }
-
-  private void updateFnagledState(Foo foo) {
-    if (importantBusinessLogic()) {
-       foo.setStatus(FNAGLED);
-       this.collaborator.collectFnagledState(foo);
-     }
-  }'''
+'''public boolean checkCart() {
+		return (this.product.isEmpty());
+	}
+	
+	public String takeALook() {
+		return (this.product.peek)());
+	}'''
 
 
 ##Here is an exercise.

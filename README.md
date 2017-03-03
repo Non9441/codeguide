@@ -77,6 +77,9 @@ public final class Bar {
   }
 }
 ```
+##Exercise 2
+
+- [Ex.2](https://github.com/Non9441/codeguide/blob/master/src/codeguide/Person.java)
 
 ##Reference
 

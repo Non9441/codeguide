@@ -4,7 +4,8 @@
 A method should do only one thing at a time. And it should be related with their name.
 This is some bad example. 
 
-'''public boolean checkAndLook() {
+'''
+public boolean checkAndLook() {
 		if(this.product.isEmpty()) {
 			return false;
 		}
@@ -12,17 +13,20 @@ This is some bad example.
 			System.out.print(this.product.peek());
 			return true;
 		}
-	}'''
+	}
+'''
 
 Here is a better one.
 
-'''public boolean checkCart() {
+'''
+public boolean checkCart() {
 		return (this.product.isEmpty());
 	}
 	
 	public String takeALook() {
 		return (this.product.peek)());
-	}'''
+	}
+'''
 
 
 ##Here is an exercise.

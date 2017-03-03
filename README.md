@@ -5,24 +5,21 @@ A method should do only one thing at a time. And it should be related with their
 This is some bad example. 
 
 '''
-public boolean checkAndLook() {
-		if(this.product.isEmpty()) {
+               public boolean checkAndLook() {
+		if (this.product.isEmpty()) {
 			return false;
-		}
+		} 
 		else {
 			System.out.print(this.product.peek());
 			return true;
 		}
-	}
-'''
+	}//This one is bad.
 
-Here is a better one.
-
-'''
-public boolean checkCart() {
+	//Take a look at this one.
+	public boolean checkCart() {
 		return (this.product.isEmpty());
 	}
-	
+
 	public String takeALook() {
 		return (this.product.peek)());
 	}

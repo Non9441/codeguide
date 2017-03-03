@@ -1,4 +1,6 @@
 #Methods Should Do Only One Thing
+
+##Detail
 A method should do only one thing at a time. And it should be related with their name.
 This is some bad example. 
 
@@ -33,6 +35,11 @@ Here is a better one.
      }
   }'''
 
+
+##Here is an exercise.
+- https://github.com/Non9441/codeguide/blob/master/src/codeguide/Cart.java
+
+##Reference
 Code from a book , "Java for small teams".
 written by Henry Coles and numerous contributors.
 https://www.gitbook.com/book/ncrcoe/java-for-small-teams/details

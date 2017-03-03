@@ -2,13 +2,13 @@
 
 ##Detail
 A method should do only one thing at a time. And it should be related with their name.
-This is some bad example. 
+This is some bad example.
 
-'''
+```Java
                public boolean checkAndLook() {
 		if (this.product.isEmpty()) {
 			return false;
-		} 
+		}
 		else {
 			System.out.print(this.product.peek());
 			return true;
@@ -23,7 +23,7 @@ This is some bad example.
 	public String takeALook() {
 		return (this.product.peek)());
 	}
-'''
+```
 
 
 ##Here is an exercise.
